@@ -1,0 +1,67 @@
+// let should be used than var , let is more precisely defined
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BOOM</h1>
+
+    <script>
+        "use strict";
+        let a=8;
+        console.log(8);
+        let obja={
+            a:2,
+            b:4,
+            func : function(number){
+                console.log("boom"+number);
+            }
+        }
+
+        document.addEventListener("click",click());
+        function click(){
+            // alert("ha");
+        }
+
+        // or
+
+        document.addEventListener("click",function click2(){
+            // alert("boom");
+        })
+
+
+        // console.log(this);
+        // function boom(){
+        //     console.log(this);
+        // }
+        // boom();
+
+        // let myobj={
+        //     boom : (number)=>{
+        //     console.log(this);
+        // }
+
+        // }
+
+          let myobj={
+            boom : function (number){
+            console.log(this);
+        }
+
+        }
+
+        setTimeout(()=>{
+            console.log("hahal");
+        },3000)
+
+       
+        myobj.boom();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,11 @@
+Creating an react app :  npx create-react-app my-apps
+
+
+TO go live: npm start
+
+
+#what am i learning :
+1) rfc  : component ( may be react js functional component)
+2) function prototype : TO define the datatype of the props (props are similar to parameters) , defaultProps
+3) useState (HOOK)
+4)Routes   : npm install react-router-dom    : In dom@6 Switch should be replaced by Routes 
